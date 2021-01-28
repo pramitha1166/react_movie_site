@@ -1,0 +1,96 @@
+.home {   
+    width: 100%;
+    text-align: center;
+    margin-top: 216px;
+    position: absolute;
+}
+
+
+.home .hero-background .hero-text > h2 {
+    font-size: 50px;
+    color: #EDF5E1;
+    line-height: 50px;
+}
+
+@media(max-width:570px) {
+    .home {
+        margin-top: 150px;
+    }
+    .home .hero-background .hero-text > h2 {
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   
+}
+
+.home .hero-background .hero-text > p {
+    padding-left: 20px;
+        padding-right: 20px;
+}
+
+
+.home .hero-background::after {
+    box-sizing: inherit;
+}
+
+.home .hero-background .hero-text .search-section > form {
+    width: 100%;
+
+}
+
+.home .hero-background .hero-text .search-section > form >input {
+    border: 1px solid #edf5e1;
+    background: none;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.5s all;
+    width: 200px;
+}
+
+.home .hero-background .hero-text .search-section > form >input:hover {
+    width: 250px;
+}
+
+.home .film-by-type {
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    height: 400px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.home .film-by-type::-webkit-scrollbar {
+    display: none;
+}
+
+.home .film-by-type .film-by-type-card {
+    border: 1px solid #edf5e1;
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;;
+}
+
+.home .film-by-type .film-by-type-card .right-side {
+    position: relative;
+    overflow-y: scroll;
+    padding-top: 40px;
+    height: 300px;
+    -webkit-mask-image: linear-gradient(rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.home .film-by-type .film-by-type-card .right-side::-webkit-scrollbar {
+    display: none;
+}
+.home .film-by-type .film-by-type-card .left-side > h3 {
+    font-size: 53px;
+    transform: rotate(270deg);
+    margin-top: 200px;
+    position: relative;
+}

@@ -1,0 +1,3 @@
+background - #5CDB95
+text - #05386B
+main-text - #EDF5E1
